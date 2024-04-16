@@ -10,10 +10,15 @@
   --secondary-color: #009f4d;
 }
 
+img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
   font-family: "Volkhov", serif;
@@ -28,6 +33,12 @@ body {
   line-height: 1.5;
 }
 
+p {
+  font-size: 17px;
+  line-height: 27px;
+  color: var(--text-color);
+}
+
 /* Dark themes */
 body {
   --bg-color: #ffff;
@@ -36,7 +47,6 @@ body {
   --color-hint: #f4f4f4;
   --shadow-color: rgb(0 0 0 / 3%);
   background-color: var(--bg-color);
-  color: var(--text-color);
 }
 
 #myBody.dark {
@@ -220,24 +230,24 @@ body {
 }
 
 /* Banner */
-#banner {
+.banner {
   width: 100%;
   height: 100vh;
 }
 
-#banner .banner-container {
+.banner .banner-container {
   display: flex;
   align-items: center;
 }
 
-#banner .banner-left {
+.banner .banner-left {
   width: 40%;
   position: absolute;
   left: 175px;
   z-index: 1;
 }
 
-#banner .banner-desc h2 {
+.banner .banner-desc h2 {
   font-size: 120px;
   line-height: 0.2;
   font-weight: bold;
@@ -245,31 +255,31 @@ body {
   margin-left: -45px;
 }
 
-#banner .banner-content p {
+.banner .banner-content p {
   margin: 24px 0 48px;
   font-size: 20px;
   line-height: 1.4;
 }
 
-.banner-right {
+.banner .banner-right {
   width: 60%;
   margin-left: auto;
   border-radius: 0 0 0 30px;
   overflow: hidden;
 }
 
-.banner-right .carousel {
+.banner .banner-right .carousel {
   width: 100%;
   height: 100%;
 }
 
-.banner-right img {
+.banner .banner-right img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
 }
 
-#banner .carousel-indicators [data-bs-target] {
+.banner .carousel-indicators [data-bs-target] {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -278,38 +288,33 @@ body {
   opacity: 1;
 }
 
-#banner .carousel-indicators .active {
+.banner .carousel-indicators .active {
   background-color: var(--primary-color);
 }
 
-#banner .carousel-caption {
+.banner .carousel-caption {
   position: absolute;
   right: 0;
   text-align: right;
   padding-right: 20px;
 }
 
-#banner .carousel-caption h5 {
+.banner .carousel-caption h5 {
   font-weight: bold;
   font-size: 18px;
 }
 
-#banner .carousel-caption p {
+.banner .carousel-caption p {
   margin-right: -10px;
   font-size: 18px;
 }
 
-#banner .carousel-caption h5 span {
+.banner .carousel-caption h5 span {
   font-weight: normal;
   font-size: 18px;
 }
 
 /* Grow */
-.grow .grow-desc p {
-  font-size: 17px;
-  line-height: 27px;
-}
-
 .grow .grow-item {
   padding: 40px 30px;
   box-shadow: 0 1rem 3rem var(--shadow-color);
@@ -341,6 +346,63 @@ body {
   color: var(--secondary-color);
 }
 
+/* Organic */
+.organic {
+  background-color: var(--secondary-color);
+}
+
+.organic .organic-head {
+  position: relative;
+}
+
+.organic .organic-head > h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 600;
+  font-size: 12vw;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  opacity: 0.15;
+}
+
+.organic .organic-head p {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.organic .organic-item {
+  background-color: var(--bg-color);
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.organic .organic-content {
+  padding: 30px 20px;
+}
+
+.organic .organic-content span {
+  padding: 5px 20px;
+  background-color: #d6f0e2;
+  color: var(--secondary-color);
+  border-radius: 20px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.organic .organic-content h4 {
+  padding: 15px 0;
+  font-weight: 600;
+  margin: 0;
+}
+
+.organic .organic-content h4 > a {
+  text-decoration: none;
+  color: var(--heading-color);
+}
+
 /* Utilities class */
 .small-title {
   color: var(--primary-color);
@@ -348,7 +410,14 @@ body {
   line-height: 28px;
 }
 
-.title {
+.medium-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--heading-color);
+}
+
+.large-title {
   font-weight: bold;
   font-size: 50px;
   line-height: 60px;
