@@ -13,5 +13,6 @@ Hướng dẫn đẩy code lên github
   B2: git commit -m
   B3: git push
 
+- git branch (tên branch): tạo branch mới
 - git branch -a: dùng để check tất cả branch trong local git
 - git checkout "tên branch": để đổi branch
