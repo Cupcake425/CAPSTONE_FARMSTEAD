@@ -59,6 +59,34 @@ body {
   --shadow-color: rgb(23 19 19);
 }
 
+/* BACK TO TOP */
+.back_to_top {
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  z-index: 998;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #009f4d;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 0.5;
+}
+
 /* Header */
 #header {
   position: fixed;
@@ -309,6 +337,7 @@ body {
 .banner .carousel-caption p {
   margin-right: -10px;
   font-size: 18px;
+  color: #fff;
 }
 
 .banner .carousel-caption h5 span {
