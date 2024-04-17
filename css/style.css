@@ -804,6 +804,10 @@ footer .footer_social a:hover {
     width: 70%;
   }
 
+  .banner .banner-content {
+    text-align: center;
+  }
+
   .banner .banner-right {
     width: 100%;
     border-radius: unset;
