@@ -45,6 +45,7 @@ body {
   --heading-color: #000;
   --text-color: #707070;
   --color-hint: #f4f4f4;
+  --border-color: #eee;
   --shadow-color: rgb(0 0 0 / 3%);
   background-color: var(--bg-color);
 }
@@ -54,6 +55,7 @@ body {
   --heading-color: #fdfffc;
   --text-color: #b7b7b7;
   --color-hint: #0b0d0e;
+  --border-color: #4e4e4e;
   --shadow-color: rgb(23 19 19);
 }
 
@@ -401,6 +403,150 @@ body {
 .organic .organic-content h4 > a {
   text-decoration: none;
   color: var(--heading-color);
+  transition: all 0.5s;
+}
+
+.organic .organic-content h4 > a:hover {
+  color: var(--secondary-color);
+}
+
+/* Quality */
+.quality .quality-item {
+  display: flex;
+}
+
+.quality .quality-item i {
+  font-size: 30px;
+  color: var(--primary-color);
+  margin-right: 5px;
+}
+
+.quality .quality-item h4 {
+  color: var(--heading-color);
+}
+
+.quality .quality-right {
+  padding-left: 115px;
+  position: relative;
+}
+
+.quality .quality-right img {
+  border-radius: 25px;
+  height: 100%;
+}
+
+.quality .quality-card-infor {
+  position: absolute;
+  bottom: 40px;
+  width: 300px;
+  left: 0;
+  padding: 40px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
+}
+
+.quality .quality-card-infor span {
+  font-size: 70px;
+  line-height: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.quality .quality-card-infor p {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.3;
+}
+
+/* Features */
+.features .feature-item {
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.features .feature-item:hover .feature-content h4 {
+  color: var(--secondary-color);
+}
+
+.features .feature-item:hover {
+  border-color: var(--border-color);
+}
+
+.features .feature-item span {
+  width: 30%;
+  padding: 0 20px;
+}
+
+.features .feature-content {
+  width: 70%;
+  padding-right: 10px;
+}
+
+.features .feature-content h4 {
+  color: var(--heading-color);
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+/* Gallery */
+
+.gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery p {
+  margin: 8px 0 24px;
+}
+
+.gallery .gallery-item a {
+  text-decoration: none;
+}
+.gallery .gallery-item span {
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 5px 0;
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255, 27%);
+}
+
+.gallery .gallery-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  transform: skew(-25deg);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  cursor: pointer;
+  z-index: 0;
+  /* transition: all 0.75s; */
+}
+
+.gallery .gallery-item:hover::before {
+  /* left: 150%; */
+  animation-name: fadeout;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
 }
 
 /* Utilities class */
@@ -441,6 +587,20 @@ body {
 
 .button:hover {
   background-color: var(--secondary-color);
+}
+
+.font-volkhov {
+  font-family: "Volkhov", serif;
+}
+
+/* Animation */
+@keyframes fadeout {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 150%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
