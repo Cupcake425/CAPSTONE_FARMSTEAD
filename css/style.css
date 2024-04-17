@@ -802,6 +802,9 @@ footer .footer_social a:hover {
 @media screen and (max-width: 991.98px) {
   .banner .banner-left {
     width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .banner .banner-content {
@@ -859,6 +862,10 @@ footer .footer_social a:hover {
   footer .footer-form {
     width: 50%;
     margin: 0 auto;
+    display: inline-block;
+  }
+
+  footer .footer_social {
     display: inline-block;
   }
 }
