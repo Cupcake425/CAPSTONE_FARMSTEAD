@@ -53,3 +53,9 @@ function changethemes() {
     iconThemes.style.color = "black";
   }
 }
+
+// var myCarousel = document.querySelector(".my-carousel");
+// var carousel = new bootstrap.Carousel(myCarousel, {
+//   interval: 2000,
+//   wrap: true,
+// });
