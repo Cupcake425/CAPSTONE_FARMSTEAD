@@ -237,3 +237,9 @@ footer .footer_social a:hover {
   visibility: visible;
   opacity: 1;
 }
+/********************** RESPONSIVE **********************/
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
