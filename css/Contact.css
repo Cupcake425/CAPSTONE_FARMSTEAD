@@ -1,0 +1,112 @@
+/* ALL */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/********************* CONTACT **********************/
+/* HEADER BACKGROUND */
+.header_bg {
+  background-image: url(../images/bg-contact.png);
+  background-position: bottom;
+  background-size: cover;
+  height: 30vh;
+  padding-top: 150px;
+}
+.header_bg a {
+  color: #707070;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+.header_bg span {
+  color: #707070;
+}
+.header_bg a:hover {
+  color: #fb811e;
+}
+/* BUTTON */
+.button {
+  padding: 12px 30px;
+  font-weight: 500;
+  border-radius: 35px;
+  background-color: #fb811e;
+  outline: none;
+  color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.button:hover {
+  background-color: #009f4d;
+}
+/* CONTACT CONTENT HEADER */
+.contact_content h5 {
+  color: #fb811e;
+  font-size: 22px;
+}
+.contact_content h3 {
+  font-size: 40px;
+  line-height: 50px;
+  color: #060606;
+  font-weight: 700;
+}
+/* CONTACT ITEM */
+.contact_item i {
+  color: #fb811e;
+  font-size: 20px;
+}
+.contact_item ul {
+  padding-left: 1rem;
+}
+.contact_item ul li:first-of-type {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+.contact_item ul li:last-of-type,
+.contact_item ul li a {
+  font-size: 17px;
+  line-height: 27px;
+  color: #707070;
+  transition: all 0.5s;
+}
+.contact_item ul li a:hover {
+  color: #fb811e;
+}
+/* CONTACT FORM */
+.contact_form input {
+  color: #666;
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 14px;
+  border: 1px solid #eee;
+  outline: none;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  width: 100%;
+}
+.contact_form textarea {
+  height: 120px;
+  width: 100%;
+  color: #060606;
+  background-color: #fff;
+  font-size: 15px;
+  padding: 14px;
+  border: 1px solid #eee;
+  outline: none;
+  border-radius: 4px;
+}
+/* CONTACT MAP */
+.contact_map {
+  padding-top: 100px;
+}
