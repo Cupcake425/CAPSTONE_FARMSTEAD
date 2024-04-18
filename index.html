@@ -49,15 +49,15 @@
     />
     <!-- Fancy box -->
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-  />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <!-- My css -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body id="myBody">
- <!-- ===START CODE=== -->
+    <!-- ===START CODE=== -->
     <!-- Header -->
     <header id="header">
       <div class="container-lg">
@@ -77,10 +77,19 @@
               <i class="gg-sun"></i>
             </div>
             <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="fa fa-bars dropdown-icon">
+              <a
+                class="btn btn-secondary dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="fa fa-bars dropdown-icon"></span>
               </a>
-              <ul class="dropdown-menu text-center" style="right:0; top: calc(100% + 10px);">
+              <ul
+                class="dropdown-menu text-center"
+                style="right: 0; top: calc(100% + 10px)"
+              >
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#" class="dropdown-item">About</a></li>
                 <li><a href="#" class="dropdown-item">Services</a></li>
@@ -97,52 +106,89 @@
     </header>
     <!-- Banner -->
     <section class="banner">
-      <div class="banner-container">       
-          <div class="banner-left">
-              <div class="banner-desc">
-                <h2>Farm</h2>
-                <div class="banner-content">
-                  <h3 class="large-title">Welcome to Farmstead
-                    where Natural Food is born!</h3>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                  <div>
-                    <a class="button" href="#">Learn More</a>
-                  </div>
+      <div class="banner-container">
+        <div class="banner-left">
+          <div class="banner-desc">
+            <h2>Farm</h2>
+            <div class="banner-content">
+              <h3 class="large-title">
+                Welcome to Farmstead where Natural Food is born!
+              </h3>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+              <div>
+                <a class="button" href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner-right">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/img_home/b1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>01 <span>/03</span></h5>
+                  <p>Agriculture</p>
                 </div>
               </div>
-          </div>     
-          <div class="banner-right">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <div class="carousel-item">
+                <img
+                  src="./images/img_home/b8.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>02<span>/03</span></h5>
+                  <p>Farm Field</p>
+                </div>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./images/img_home/b1.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>01 <span>/03</span></h5>
-                    <p>Agriculture</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="./images/img_home/b8.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>02<span>/03</span></h5>
-                    <p>Farm Field</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="./images/img_home/b4.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>03 <span>/03</span></h5>
-                    <p>Organic Farm</p>
-                  </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/img_home/b4.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>03 <span>/03</span></h5>
+                  <p>Organic Farm</p>
                 </div>
               </div>
             </div>
-          </div>      
+          </div>
+        </div>
       </div>
     </section>
     <!-- Grow -->
@@ -153,34 +199,42 @@
             <div class="grow-desc pe-5">
               <h5 class="small-title">Grow Naturally</h5>
               <h3 class="medium-title mb-md-3 mb-2">Leaders in the field</h3>
-              <p>Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit. Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum.</p>
-              <div class="mt-lg-5 mt-4"><a href="#" class="button">Discover More</a></div>
-            </div>        
+              <p>
+                Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies
+                nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis
+                eros et, sed commodo risus. Nullam sit amet laoreet elit.
+                Suspendisse non init magnaa velit efficitur, dolor eget ex
+                fermentum.
+              </p>
+              <div class="mt-lg-5 mt-4">
+                <a href="#" class="button">Discover More</a>
+              </div>
+            </div>
           </div>
           <div class="col-lg-6">
             <div class="row g-4 text-center">
               <div class="col-6">
-                <div class="grow-item ">
-                  <img src="./images/img_home/img4.png" alt="#">
+                <div class="grow-item">
+                  <img src="./images/img_home/img4.png" alt="#" />
                   <a href="#">Natural Products</a>
                 </div>
               </div>
               <div class="col-6">
-                <div class="grow-item ">
-                  <img src="./images/img_home/img2.png" alt="#">
+                <div class="grow-item">
+                  <img src="./images/img_home/img2.png" alt="#" />
                   <a href="#">Wheat Cultivation</a>
                 </div>
               </div>
               <div class="col-6">
-               <div class="grow-item ">
-                  <img src="./images/img_home/img1.png" alt="#">
+                <div class="grow-item">
+                  <img src="./images/img_home/img1.png" alt="#" />
                   <a href="#">Modern Truck</a>
-               </div>
+                </div>
               </div>
               <div class="col-6">
-                <div class="grow-item ">
-                    <img src="./images/img_home/img3.png" alt="#">
-                    <a href="#">Organic Products</a>
+                <div class="grow-item">
+                  <img src="./images/img_home/img3.png" alt="#" />
+                  <a href="#">Organic Products</a>
                 </div>
               </div>
             </div>
@@ -196,12 +250,15 @@
           <div class="row align-items-center">
             <div class="col-6">
               <h5 class="small-title text-white">What we do</h5>
-              <h3 class="medium-title text-white">Why Choose Our Fresh Organic Foods</h3>
+              <h3 class="medium-title text-white">
+                Why Choose Our Fresh Organic Foods
+              </h3>
             </div>
             <div class="col-6">
               <p class="text-white">
-                Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque,
-                eaque ipsa quae ab illo inventore.Sed ut perspiciatis unde omnis iste natus error sit.
+                Sed ut perspiciatis unde omnis iste natus error sit accusantium
+                doloremque, eaque ipsa quae ab illo inventore.Sed ut
+                perspiciatis unde omnis iste natus error sit.
               </p>
             </div>
           </div>
@@ -210,35 +267,39 @@
           <div class="row">
             <div class="col-12 col-lg-4 mb-sm-4">
               <div class="organic-item">
-                <img src="./images/img_home/service1.jpg" alt="img">
+                <img src="./images/img_home/service1.jpg" alt="img" />
                 <div class="organic-content">
                   <span>Natural</span>
                   <h4><a href="#">Agriculture Products</a></h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque laudantium, totam rem aperiam
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus sit accusantium
+                    doloremque laudantium, totam rem aperiam
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-12 col-lg-4 mb-sm-4">
               <div class="organic-item">
-                <img src="./images/img_home/service2.jpg" alt="img">
+                <img src="./images/img_home/service2.jpg" alt="img" />
                 <div class="organic-content">
                   <span>Agriculture</span>
                   <h4><a href="#">Fresh Vegetables</a></h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque
-                    laudantium, totam rem aperiam
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus sit accusantium
+                    doloremque laudantium, totam rem aperiam
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-12 col-lg-4 mb-sm-4">
               <div class="organic-item">
-                <img src="./images/img_home/service3.jpg" alt="img">
+                <img src="./images/img_home/service3.jpg" alt="img" />
                 <div class="organic-content">
                   <span>Farm</span>
                   <h4><a href="#">Organic Products</a></h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque
-                    laudantium, totam rem aperiam
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus sit accusantium
+                    doloremque laudantium, totam rem aperiam
                   </p>
                 </div>
               </div>
@@ -255,8 +316,14 @@
             <div class="quality-left">
               <div class="quality-header">
                 <h5 class="small-title">Why choose us</h5>
-                <h3 class="medium-title">Quality food is the most important thing in our life</h3>
-                <p class="pt-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae, fugiat.</p>
+                <h3 class="medium-title">
+                  Quality food is the most important thing in our life
+                </h3>
+                <p class="pt-3">
+                  Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                  ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Non quae, fugiat.
+                </p>
               </div>
               <div class="row mt-3 mt-md-5">
                 <div class="col-6 pt-3">
@@ -264,7 +331,9 @@
                     <i class="fa fa-users"></i>
                     <div>
                       <h4 class="fw-bold">Qualified Staff</h4>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit.</p>
+                      <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -273,7 +342,9 @@
                     <i class="fa fa-life-ring"></i>
                     <div>
                       <h4 class="fw-bold">Excellent Service</h4>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit.</p>
+                      <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -282,7 +353,7 @@
           </div>
           <div class="col-6">
             <div class="quality-right">
-              <img src="./images/img_home/image.jpg" alt="#">
+              <img src="./images/img_home/image.jpg" alt="#" />
               <div class="quality-card-infor text-center">
                 <span class="font-volkhov">36+</span>
                 <p>YEARS OF EXPERIENCE</p>
@@ -298,67 +369,73 @@
         <div class="row g-4">
           <div class="col-6 col-lg-4">
             <a href="#" class="feature-item d-flex py-4 px-3">
-              <span><img src="./images/img_home/img5.png" alt="img"></span>
+              <span><img src="./images/img_home/img5.png" alt="img" /></span>
               <div class="feature-content">
-                <h4 class="font-volkhov small-title">
-                  Agriculture
-                </h4>
-                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.              </p>
+                <h4 class="font-volkhov small-title">Agriculture</h4>
+                <p>
+                  Ras effic itur metusga via suscipit consectetur adipisicing
+                  unde omnis.
+                </p>
               </div>
             </a>
           </div>
           <div class="col-6 col-lg-4">
             <a href="#" class="feature-item d-flex py-4 px-3">
-              <span><img src="./images/img_home/img6.png" alt="img"></span>
+              <span><img src="./images/img_home/img6.png" alt="img" /></span>
               <div class="feature-content">
-                <h4 class="font-volkhov small-title">
-                  Fresh
-                </h4>
-                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.              </p>
+                <h4 class="font-volkhov small-title">Fresh</h4>
+                <p>
+                  Ras effic itur metusga via suscipit consectetur adipisicing
+                  unde omnis.
+                </p>
               </div>
             </a>
           </div>
           <div class="col-6 col-lg-4">
             <a href="#" class="feature-item d-flex py-4 px-3">
-              <span><img src="./images/img_home/img7.png" alt="img"></span>
+              <span><img src="./images/img_home/img7.png" alt="img" /></span>
               <div class="feature-content">
-                <h4 class="font-volkhov small-title">
-                  Natural
-                </h4>
-                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.              </p>
+                <h4 class="font-volkhov small-title">Natural</h4>
+                <p>
+                  Ras effic itur metusga via suscipit consectetur adipisicing
+                  unde omnis.
+                </p>
               </div>
             </a>
           </div>
           <div class="col-6 col-lg-4">
             <a href="#" class="feature-item d-flex py-4 px-3">
-              <span><img src="./images/img_home/img8.png" alt="img"></span>
+              <span><img src="./images/img_home/img8.png" alt="img" /></span>
               <div class="feature-content">
-                <h4 class="font-volkhov small-title">
-                  Farm
-                </h4>
-                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.              </p>
+                <h4 class="font-volkhov small-title">Farm</h4>
+                <p>
+                  Ras effic itur metusga via suscipit consectetur adipisicing
+                  unde omnis.
+                </p>
               </div>
             </a>
           </div>
           <div class="col-6 col-lg-4">
             <a href="#" class="feature-item d-flex py-4 px-3">
-              <span><img src="./images/img_home/img9.png" alt="img"></span>
+              <span><img src="./images/img_home/img9.png" alt="img" /></span>
               <div class="feature-content">
-                <h4 class="font-volkhov small-title">
-                  Organic
-                </h4>
-                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.              </p>
+                <h4 class="font-volkhov small-title">Organic</h4>
+                <p>
+                  Ras effic itur metusga via suscipit consectetur adipisicing
+                  unde omnis.
+                </p>
               </div>
             </a>
           </div>
           <div class="col-6 col-lg-4">
             <a href="#" class="feature-item d-flex py-4 px-3">
-              <span><img src="./images/img_home/img10.png" alt="img"></span>
+              <span><img src="./images/img_home/img10.png" alt="img" /></span>
               <div class="feature-content">
-                <h4 class="font-volkhov small-title">
-                  Dairy
-                </h4>
-                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.              </p>
+                <h4 class="font-volkhov small-title">Dairy</h4>
+                <p>
+                  Ras effic itur metusga via suscipit consectetur adipisicing
+                  unde omnis.
+                </p>
               </div>
             </a>
           </div>
@@ -370,53 +447,77 @@
       <div class="container-lg py-4 py-md-5">
         <div class="row text-center g-0">
           <div class="col-6 col-lg-3 mt-2 text-lg-start">
-            <h5 class="small-title">
-              Gallery
-            </h5>
-            <h3 class="medium-title">
-              Our Products
-            </h3>
+            <h5 class="small-title">Gallery</h5>
+            <h3 class="medium-title">Our Products</h3>
             <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo.</p>
             <a href="#" class="button">Discover More</a>
           </div>
           <div class="col-6 col-lg-3 gallery-item">
-            <a href="./images/img_home/g2.jpg" data-fancybox="gallery" data-caption="Hình #1">
+            <a
+              href="./images/img_home/g2.jpg"
+              data-fancybox="gallery"
+              data-caption="Hình #1"
+            >
               <img src="./images/img_home/g2.jpg" />
               <span class="font-volkhov">Fresh Carrots</span>
             </a>
           </div>
           <div class="col-6 col-lg-3 gallery-item">
-            <a href="./images/img_home/g3.jpg" data-fancybox="gallery" data-caption="Hình #2">
+            <a
+              href="./images/img_home/g3.jpg"
+              data-fancybox="gallery"
+              data-caption="Hình #2"
+            >
               <img src="./images/img_home/g3.jpg" />
               <span class="font-volkhov">Strawberry</span>
             </a>
           </div>
           <div class="col-6 col-lg-3 gallery-item">
-            <a href="./images/img_home/g6.jpg" data-fancybox="gallery" data-caption="Hình #3">
+            <a
+              href="./images/img_home/g6.jpg"
+              data-fancybox="gallery"
+              data-caption="Hình #3"
+            >
               <img src="./images/img_home/g6.jpg" />
               <span class="font-volkhov">Our Farm</span>
             </a>
           </div>
           <div class="col-6 col-lg-3 gallery-item">
-            <a href="./images/img_home/g5.jpg" data-fancybox="gallery" data-caption="Hình #4">
+            <a
+              href="./images/img_home/g5.jpg"
+              data-fancybox="gallery"
+              data-caption="Hình #4"
+            >
               <img src="./images/img_home/g5.jpg" />
               <span class="font-volkhov">Fresh Apples</span>
             </a>
           </div>
           <div class="col-6 col-lg-3 gallery-item">
-            <a href="./images/img_home/g1.jpg" data-fancybox="gallery" data-caption="Hình #5">
+            <a
+              href="./images/img_home/g1.jpg"
+              data-fancybox="gallery"
+              data-caption="Hình #5"
+            >
               <img src="./images/img_home/g1.jpg" />
               <span class="font-volkhov">Awesome Fields</span>
             </a>
           </div>
           <div class="col-6 col-lg-3 gallery-item">
-            <a href="./images/img_home/g7.jpg" data-fancybox="gallery" data-caption="Hình #6">
+            <a
+              href="./images/img_home/g7.jpg"
+              data-fancybox="gallery"
+              data-caption="Hình #6"
+            >
               <img src="./images/img_home/g7.jpg" />
               <span class="font-volkhov">Fresh Grapes</span>
             </a>
           </div>
           <div class="col-6 col-lg-3 gallery-item">
-            <a href="./images/img_home/g8.jpg" data-fancybox="gallery" data-caption="Hình #7">
+            <a
+              href="./images/img_home/g8.jpg"
+              data-fancybox="gallery"
+              data-caption="Hình #7"
+            >
               <img src="./images/img_home/g8.jpg" />
               <span class="font-volkhov">Hot Papper</span>
             </a>
@@ -429,62 +530,97 @@
       <div class="container-lg-fluid h-100 pt-4 pt-md-5">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active text-lg-center p-5">
               <div class="row customer-content">
                 <div class="col-3 customer-left">
-                  <a href="#url"><img src="./images/img_home/testi1.jpg" alt=""></a>
-                  <h6 class="font-volkhov text-white mt-2 mb-1">Dennis wilson</h6>
+                  <a href="#url"
+                    ><img src="./images/img_home/testi1.jpg" alt=""
+                  /></a>
+                  <h6 class="font-volkhov text-white mt-2 mb-1">
+                    Dennis wilson
+                  </h6>
                   <span class="text-white">Customer</span>
                 </div>
                 <div class="col-9 customer-right text-lg-start">
                   <span class="fa fa-quote-left"></span>
-                  <p>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
-                    beatae
-                    laudantium Quas minima sunt natus tempore, maiores aliquid modi felis
-                    sequi optio lacinia id ipsum non velit, culpa.
-                    voluptate rem ullam dolore nisi est quasi, doloribus tempora.
-                    est elit. Non quae, fugiat ad libero justo sed amet.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet int consectetur adipisicing elit.
+                    Velita beatae laudantium Quas minima sunt natus tempore,
+                    maiores aliquid modi felis sequi optio lacinia id ipsum non
+                    velit, culpa. voluptate rem ullam dolore nisi est quasi,
+                    doloribus tempora. est elit. Non quae, fugiat ad libero
+                    justo sed amet.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="carousel-item text-lg-center p-5">
               <div class="row customer-content">
                 <div class="col-3 customer-left">
-                  <a href="#url"><img src="./images/img_home/testi2.jpg" alt=""></a>
-                  <h6 class="font-volkhov text-white mt-2 mb-1">Dennis wilson</h6>
+                  <a href="#url"
+                    ><img src="./images/img_home/testi2.jpg" alt=""
+                  /></a>
+                  <h6 class="font-volkhov text-white mt-2 mb-1">
+                    Dennis wilson
+                  </h6>
                   <span class="text-white">Customer</span>
                 </div>
                 <div class="col-9 customer-right text-lg-start">
                   <span class="fa fa-quote-left"></span>
-                  <p>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
-                    beatae
-                    laudantium Quas minima sunt natus tempore, maiores aliquid modi felis
-                    sequi optio lacinia id ipsum non velit, culpa.
-                    voluptate rem ullam dolore nisi est quasi, doloribus tempora.
-                    est elit. Non quae, fugiat ad libero justo sed amet.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet int consectetur adipisicing elit.
+                    Velita beatae laudantium Quas minima sunt natus tempore,
+                    maiores aliquid modi felis sequi optio lacinia id ipsum non
+                    velit, culpa. voluptate rem ullam dolore nisi est quasi,
+                    doloribus tempora. est elit. Non quae, fugiat ad libero
+                    justo sed amet.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="carousel-item text-lg-center p-5">
               <div class="row customer-content">
                 <div class="col-3 customer-left">
-                  <a href="#url"><img src="./images/img_home/testi3.jpg" alt=""></a>
-                  <h6 class="font-volkhov text-white mt-2 mb-1">Dennis wilson</h6>
+                  <a href="#url"
+                    ><img src="./images/img_home/testi3.jpg" alt=""
+                  /></a>
+                  <h6 class="font-volkhov text-white mt-2 mb-1">
+                    Dennis wilson
+                  </h6>
                   <span class="text-white">Customer</span>
                 </div>
                 <div class="col-9 customer-right text-lg-start">
                   <span class="fa fa-quote-left"></span>
-                  <p>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
-                    beatae
-                    laudantium Quas minima sunt natus tempore, maiores aliquid modi felis
-                    sequi optio lacinia id ipsum non velit, culpa.
-                    voluptate rem ullam dolore nisi est quasi, doloribus tempora.
-                    est elit. Non quae, fugiat ad libero justo sed amet.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet int consectetur adipisicing elit.
+                    Velita beatae laudantium Quas minima sunt natus tempore,
+                    maiores aliquid modi felis sequi optio lacinia id ipsum non
+                    velit, culpa. voluptate rem ullam dolore nisi est quasi,
+                    doloribus tempora. est elit. Non quae, fugiat ad libero
+                    justo sed amet.
+                  </p>
                 </div>
               </div>
             </div>
@@ -568,10 +704,10 @@
       </div>
     </footer>
     <!-- Back to top -->
-   <!-- BACK TO TOP -->
-   <a href="#" class="back_to_top cd-top text-replace js-cd-top">
-    <i class="fa-solid fa-arrow-turn-up"></i>
-  </a>
+    <!-- BACK TO TOP -->
+    <a href="#" class="back_to_top cd-top text-replace js-cd-top">
+      <i class="fa-solid fa-arrow-turn-up"></i>
+    </a>
     <!-- ===END CODE=== -->
     <!-- Bootstrap JavaScript Libraries -->
     <script
