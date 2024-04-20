@@ -1,0 +1,114 @@
+/* ALL */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Volkhov", serif !important;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+h4 {
+  color: #060606;
+  font-size: 1.5rem;
+}
+/* Phần màu của html code */
+.bs_class {
+  color: #4f9fcf;
+}
+.bs_name {
+  color: #d44950;
+}
+/********************** BOOTSTRAP **********************/
+/* TITLE */
+.bootstrap {
+  padding-top: 100px;
+}
+.bootstrap_title h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #060606;
+}
+.boostrap_title p {
+  font-size: 17px;
+  line-height: 27px;
+  color: #707070;
+}
+
+/* BOOTSTRAP EXAMPLE */
+/* Phần cover */
+.bs_cover {
+  padding: 2rem;
+  border: 0.2rem solid #fafafa;
+  margin-top: 1rem;
+}
+/* phần bên trong */
+.bs_example {
+  background-color: #fafafa;
+  border-radius: 3px;
+  padding: 4rem 2rem;
+}
+
+.bs_example h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #060606;
+}
+.bs_example p {
+  font-size: 20px;
+  font-weight: 300;
+}
+/* Phần code button còn lại bên Contact.css, phần bên dưới chỉ để đè phần bên kia */
+.bs_cover .bs_example button {
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+/* BOOTSTRAP CODE */
+.bs_code {
+  padding: 1.5rem;
+  background-color: #fafafa;
+  margin: 1rem 0;
+}
+.bs_content pre {
+  background-color: #eee;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6rem;
+  font-size: 17px;
+}
+/*********************** BREADCRUMB ***********************/
+.breadcrumb_title h5 {
+  color: #fb811e;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.breadcrumb_home p {
+  margin-bottom: 0 !important;
+  font-size: 16px;
+  font-weight: 300;
+}
+.breadcrumb_home {
+  background-color: #fafafa;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+.breadcrumb_home a {
+  color: #707070;
+  transition: all 0.5s;
+}
+.breadcrumb_home a:hover {
+  color: #fb811e;
+}
