@@ -53,3 +53,13 @@ function changethemes() {
     iconThemes.style.color = "black";
   }
 }
+
+// Popup video
+const opentext = document.getElementById("popup");
+function openPopup() {
+  opentext.classList.add("opentext");
+}
+
+function closePopup() {
+  opentext.classList.remove("opentext");
+}
