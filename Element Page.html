@@ -52,13 +52,11 @@
     <link rel="stylesheet" href="./css/404.css" />
     <!-- CONTACT CSS -->
     <link rel="stylesheet" href="./css/Contact.css" />
-    <!-- Link CSS Hieu -->
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body id="myBody">
     <!-- HEADER -->
     <header id="header">
-      <div class="container">
+      <div class="container-lg">
         <h2 class="logo">
           <a href="#">
             Farmstead <i class="fa fa-leaf" aria-hidden="true"></i>
@@ -88,8 +86,8 @@
                 class="dropdown-menu text-center"
                 style="right: 0; top: calc(100% + 10px)"
               >
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#" class="dropdown-item">About</a></li>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./about.html" class="dropdown-item">About</a></li>
                 <li><a href="#" class="dropdown-item">Services</a></li>
                 <li><a href="#" class="dropdown-item">Blog Posts</a></li>
                 <li><a href="#" class="dropdown-item">Landing Page</a></li>
@@ -174,6 +172,7 @@
         </div>
       </div>
     </section>
+    <!-- BREADCRUMB -->
     <section class="breadcrumb">
       <div class="container">
         <div class="breadcrumb_title">
@@ -215,6 +214,83 @@
         &lt;li <span class="bs_class">class</span>=<span class="bs_name">"breadcrumb-item active"</span> <span class="bs_class">aria-current</span>=<span class="bs_name">"page"</span>&gt;Data&lt;/li&gt;
     &lt;/ol&gt;
 &lt;/nav&gt;
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- DIVIDERS -->
+    <section class="dividers">
+      <div class="container">
+        <h5>Dividers</h5>
+        <div class="bs_cover">
+          <div class="breadcrumb_home">
+            <p><a href="#">Home</a> / library</p>
+          </div>
+        </div>
+        <div class="bs_code">
+          <div class="bs_content">
+            <pre>
+&lt;nav <span class="bs_class">style</span><span class="bs_name">"--bs-breadcrumb-divider:'>';"</span> <span class="bs_class">aria-label</span>=<span class="bs_name">"breadcrumb"</span>&gt;
+    &lt;ol <span class="bs_class">class</span>=<span class="bs_name">"breadcrumb"</span>&gt;
+        &lt;li <span class="bs_class">class</span>=<span class="bs_name">"breadcrumb-item"</span>&gt;&lt;a <span class="bs_class">href</span>=<span class="bs_name">"#"</span>&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li <span class="bs_class">class</span>=<span class="bs_name">"breadcrumb-item active"</span> <span class="bs_class">aria-current</span>=<span class="bs_name">"page"</span>&gt;Library&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/nav&gt;
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cards">
+      <div class="container">
+        <h4 class="pt-4 pb-3">Cards</h4>
+        <div class="bs_cover">
+          <div class="cards_content">
+            <img src="./images/image-cap.jpg" alt="image_cap" />
+            <div class="cards_body">
+              <h5 class="mt-3">Card title</h5>
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button class="button">Go somewhere</button>
+            </div>
+          </div>
+        </div>
+        <div class="bs_code">
+          <div class="bs_content">
+            <pre>
+&lt;div <span class="bs_class">class</span>=<span class="bs_name">"card"</span> <span class="bs_class">style</span>=<span class="bs_name">"width:18rem;"</span>&gt;
+    &lt;img <span class="bs_class">src</span>=<span class="bs_name">"images/card.jpg"</span> <span class="bs_class">class</span>=<span class="bs_name">"card-img-top"</span> <span class="bs_class">alt</span>=<span class="bs_name">"..."</span>&gt;
+    &lt;div <span class="bs_class">class</span>=<span class="bs_name">"card-body"</span>&gt;
+        &lt;h5 <span class="bs_class">class</span>=<span class="bs_name">"card-title"</span>&gt;Card title&lt;/h5&gt;
+        &lt;p <span class="bs_class">class</span>=<span class="bs_name">"card-text"</span>&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;a <span class="bs_class">href</span>=<span class="bs_name">"#"</span> <span class="bs_class">class</span>=<span class="bs_name">"btn btn-primary"</span>&gt;Go somewhere&lt;/a&&gt;
+    &lt;/div&gt;    
+&lt;/div&gt;
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="display">
+      <div class="container">
+        <h4 class="pt-4 pb-3">Display Headings</h4>
+        <div class="bs_cover">
+          <h1 class="display_h1 display_1">Display 1</h1>
+          <h1 class="display_h1 display_2">Display 2</h1>
+          <h1 class="display_h1 display_3">Display 3</h1>
+          <h1 class="display_h1 display_4">Display 4</h1>
+        </div>
+        <div class="bs_code">
+          <div class="bs_content">
+            <pre>
+&lt;h1 <span class="bs_class">class=</span><span class="bs_name">"diplay-1"</span>&gt;Display 1&lt;/h1&gt;
+&lt;h1 <span class="bs_class">class=</span><span class="bs_name">"diplay-2"</span>&gt;Display 2&lt;/h1&gt;
+&lt;h1 <span class="bs_class">class=</span><span class="bs_name">"diplay-3"</span>&gt;Display 3&lt;/h1&gt;
+&lt;h1 <span class="bs_class">class=</span><span class="bs_name">"diplay-4"</span>&gt;Display 4&lt;/h1&gt;
+            </pre>
           </div>
         </div>
       </div>
@@ -223,14 +299,14 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-4">
+          <div class="col-12 mb-3 col-lg-4">
             <h3>FIND US</h3>
             <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
             <p>Phone: <a href="tel:+12 23456790">+12 23456790</a></p>
             <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
             <p>Fax: <a href="tel:+11 367 21890">+11 367 21890</a></p>
           </div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 mb-3 col-lg-4">
             <h2 class="logo">
               <a href="#">
                 Farmstead <i class="fa fa-leaf" aria-hidden="true"></i>
@@ -245,7 +321,7 @@
               <a href="https://w3layouts.com/">W3Layouts</a>.
             </p>
           </div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 mb-3 col-lg-4">
             <h3>NEWSLETTER</h3>
             <p>
               Subscribe to our mailing list and get updates to your email inbox.

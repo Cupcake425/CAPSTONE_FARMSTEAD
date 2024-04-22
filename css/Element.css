@@ -1,4 +1,8 @@
 /* ALL */
+:root {
+  --primary-color: #fb811e;
+  --secondary-color: #009f4d;
+}
 * {
   padding: 0;
   margin: 0;
@@ -17,10 +21,200 @@ li {
   list-style: none;
 }
 h4 {
-  color: #060606;
+  color: var(--heading-color);
   font-size: 1.5rem;
+  font-weight: bold;
+}
+/* Dark themes */
+body {
+  --bg-color: #ffff;
+  --heading-color: #000;
+  --text-color: #707070;
+  --color-hint: #f4f4f4;
+  --border-color: #eee;
+  --shadow-color: rgb(0 0 0 / 3%);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+#myBody.dark {
+  --bg-color: #222222;
+  --heading-color: #fdfffc;
+  --text-color: #b7b7b7;
+  --color-hint: #0b0d0e;
+  --border-color: #4e4e4e;
+  --shadow-color: rgb(23 19 19);
+}
+/* Header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  transition: all 0.5s;
+  z-index: 999;
 }
 
+#header .container-lg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#header .logo {
+  position: relative;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+#header .logo a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+#header .logo i {
+  font-size: 22px;
+  position: absolute;
+  left: 32%;
+  top: -25%;
+}
+
+/* Nav */
+#header .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .nav-themes {
+  cursor: pointer;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+#header .nav-themes:hover > i {
+  color: var(--primary-color);
+}
+
+#header .nav-themes .gg-moon {
+  display: block;
+}
+
+#header .nav-themes .gg-sun {
+  display: none;
+}
+
+.dark #header .nav-themes .gg-sun {
+  display: block;
+}
+
+.dark #header .nav-themes .gg-moon {
+  display: none;
+}
+
+#header .nav-container i {
+  font-size: 18px;
+}
+
+#header .nav-search {
+  width: 40px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+
+#header .nav-search input {
+  padding: 0 5px;
+  padding-left: 35px;
+  font-size: 14px;
+  border: 0;
+  position: absolute;
+  opacity: 0;
+  top: 5px;
+  left: 0;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#header .nav-search:focus-within {
+  width: 200px;
+}
+
+#header .nav-search input:focus {
+  opacity: 1;
+}
+
+#header .nav-search input:focus + i {
+  position: relative;
+  z-index: 1;
+}
+
+#header .nav-themes {
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+}
+
+#header .dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+#header .dropdown > a {
+  background-color: inherit;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+#header .dropdown span {
+  font-size: 25px;
+}
+
+#header .dropdown .dropdown-menu {
+  width: 250px;
+  right: 0;
+  border: 1px solid transparent;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  transition: all 0.5s;
+}
+
+#header .dropdown-menu li a {
+  display: block;
+  padding: 7px;
+  text-decoration: none;
+  color: var(--heading-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+#header .dropdown-menu li a.active {
+  color: var(--primary-color);
+}
+
+#header .dropdown-menu li a:not(.active):hover {
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+}
+
+#header .dropdown-menu {
+  background-color: var(--bg-color);
+}
 /********************** BOOTSTRAP **********************/
 /* TITLE */
 .bootstrap {
@@ -30,24 +224,23 @@ h4 {
   font-size: 40px;
   line-height: 50px;
   font-weight: 700;
-  color: #060606;
+  color: var(--heading-color);
 }
 .boostrap_title p {
   font-size: 17px;
   line-height: 27px;
-  color: #707070;
+  color: var(--text-color);
 }
-
 /* BOOTSTRAP EXAMPLE */
 /* Phần cover */
 .bs_cover {
   padding: 2rem;
-  border: 0.2rem solid #fafafa;
+  border: 0.2rem solid var(--border-color);
   margin-top: 1rem;
 }
 /* phần bên trong */
 .bs_example {
-  background-color: #fafafa;
+  background-color: var(--color-hint);
   border-radius: 3px;
   padding: 4rem 2rem;
 }
@@ -56,7 +249,7 @@ h4 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
-  color: #060606;
+  color: var(--heading-color);
 }
 .bs_example p {
   font-size: 20px;
@@ -70,11 +263,12 @@ h4 {
 /* BOOTSTRAP CODE */
 .bs_code {
   padding: 1.5rem;
-  background-color: #fafafa;
+  background-color: var(--color-hint);
   margin: 1rem 0;
 }
 .bs_content pre {
-  background-color: #eee;
+  background-color: var(--border-color);
+  color: var(--text-color);
   line-height: 1.6;
   margin-bottom: 1.6rem;
   max-width: 100%;
@@ -99,17 +293,62 @@ h4 {
   margin-bottom: 0 !important;
   font-size: 16px;
   font-weight: 300;
+  color: var(--text-color);
 }
 .breadcrumb_home {
-  background-color: #fafafa;
+  background-color: var(--color-hint);
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   border-radius: 0.25rem;
 }
 .breadcrumb_home a {
-  color: #707070;
+  color: var(--text-color);
   transition: all 0.5s;
 }
 .breadcrumb_home a:hover {
   color: #fb811e;
+}
+/************************ DIVIDERS ************************/
+.dividers h5 {
+  color: #fb811e;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+/************************ CARDS ************************/
+.cards_content {
+  width: 25%;
+}
+.cards_body {
+  border: 1px solid var(--border-color);
+  padding: 20px;
+}
+.cards_body h5 {
+  color: #fb811e;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.cards_body p {
+  font-size: 17px;
+  line-height: 27px;
+  color: var(--text-color);
+}
+.cards_body button {
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+/************************ DISPLAY ************************/
+.display_h1 {
+  color: var(--heading-color);
+}
+.display_1 {
+  font-size: 6rem;
+}
+.display_2 {
+  font-size: 5.5rem;
+}
+.display_3 {
+  font-size: 5rem;
+}
+.display_4 {
+  font-size: 4.5rem;
 }
