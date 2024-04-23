@@ -25,6 +25,14 @@ h4 {
   font-size: 1.5rem;
   font-weight: bold;
 }
+h5 {
+  color: #fb811e;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+p {
+  margin-bottom: 0 !important;
+}
 /* Dark themes */
 body {
   --bg-color: #ffff;
@@ -242,7 +250,8 @@ body {
 .bs_example {
   background-color: var(--color-hint);
   border-radius: 3px;
-  padding: 4rem 2rem;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
 }
 
 .bs_example h1 {
@@ -284,13 +293,7 @@ body {
   color: #d44950;
 }
 /*********************** BREADCRUMB ***********************/
-.breadcrumb_title h5 {
-  color: #fb811e;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
 .breadcrumb_home p {
-  margin-bottom: 0 !important;
   font-size: 16px;
   font-weight: 300;
   color: var(--text-color);
@@ -308,24 +311,13 @@ body {
 .breadcrumb_home a:hover {
   color: #fb811e;
 }
-/************************ DIVIDERS ************************/
-.dividers h5 {
-  color: #fb811e;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
 /************************ CARDS ************************/
 .cards_content {
-  width: 25%;
+  width: 100%;
 }
 .cards_body {
   border: 1px solid var(--border-color);
   padding: 20px;
-}
-.cards_body h5 {
-  color: #fb811e;
-  font-size: 1.4rem;
-  font-weight: 600;
 }
 .cards_body p {
   font-size: 17px;
@@ -351,4 +343,58 @@ body {
 }
 .display_4 {
   font-size: 4.5rem;
+}
+/************************ FLEX DIRECTION ************************/
+.flex_example {
+  background-color: var(--color-hint);
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 10px;
+}
+.flex_item {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  padding: 5px;
+}
+/************************ BADGES ************************/
+.badges .bs_cover .bs_example h1,
+.badges .bs_cover .bs_example h2,
+.badges .bs_cover .bs_example h3,
+.badges .bs_cover .bs_example h4,
+.badges .bs_cover .bs_example h5,
+.badges .bs_cover .bs_example h6 {
+  color: var(--heading-color);
+}
+/* Ghi dài ra với !important để đè code boostrap */
+body .badges .bs_cover .bs_example .badge {
+  background-color: #fb811e !important;
+}
+/************************ LISTS ************************/
+.lists li {
+  background-color: var(--color-hint);
+}
+.lists .bs_cover .flex_example .list-group .active {
+  background-color: #fb811e !important;
+  border-color: #fb811e !important;
+}
+.lists .bs_cover .flex_example .list-group .badge {
+  background-color: #fb811e !important;
+}
+/************************ TABLE ************************/
+.sec_table .flex_example .table th {
+  background-color: var(--color-hint) !important;
+}
+.sec_table .flex_example {
+  border-bottom: none;
+}
+/************************ RESPONSIVE ************************/
+@media screen and (min-width: 991.98px) {
+  .cards_content {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .cards_content {
+    width: 25%;
+  }
 }
