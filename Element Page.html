@@ -29,6 +29,12 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Fonawesome -->
     <link
       rel="stylesheet"
@@ -540,6 +546,7 @@
         </div>
       </div>
     </section>
+    <!-- BADGE -->
     <section class="badges">
       <div class="container">
         <h4 class="pt-4 pb-3">Badges</h4>
@@ -579,6 +586,7 @@
         </div>
       </div>
     </section>
+    <!-- LISTS -->
     <section class="lists">
       <div class="container">
         <h4 class="pt-4 pb-3">Lists</h4>
@@ -718,41 +726,44 @@
         </div>
       </div>
     </section>
+    <!-- TABLE -->
     <section class="sec_table">
       <div class="container">
         <h4 class="pt-4 pb-3">Table</h4>
         <div class="bs_cover">
           <div class="flex_example">
-            <table class="table table-bordered table-responsive">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td class="table-active">Jacob</td>
-                  <td class="table-active">Thornton</td>
-                  <td class="table-active">@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td class="table-active">Jacob</td>
+                    <td class="table-active">Thornton</td>
+                    <td class="table-active">@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div class="bs_code">
@@ -788,6 +799,365 @@
         &lt;/tr&gt;
         &lt;/tbody&gt;
 &lt;table&gt;
+            </pre>
+          </div>
+        </div>
+        <h5 class="my-5">Striped rows</h5>
+        <div class="bs_cover">
+          <div class="flex_example">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td class="table-active">Mark</td>
+                    <td class="table-active">Otto</td>
+                    <td class="table-active">@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td class="table-active">Jacob</td>
+                    <td class="table-active">Thornton</td>
+                    <td class="table-active">@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td class="table-active">Larry</td>
+                    <td class="table-active">the Bird</td>
+                    <td class="table-active">@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="bs_code">
+          <div class="bs_content">
+            <pre>
+&lt;table <span class="bs_class">class=</span><span class="bs_name">"table table-striped"</span>&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th <span class="bs_class">scope=</span><span class="bs_name">"col"</span>&gt;#&lt;/th&gt;
+            &lt;th <span class="bs_class">scope=</span><span class="bs_name">"col"</span>&gt;First&lt;/th&gt;
+            &lt;th <span class="bs_class">scope=</span><span class="bs_name">"col"</span>&gt;Last&lt;/th&gt;
+            &lt;th <span class="bs_class">scope=</span><span class="bs_name">"col"</span>&gt;Handle&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;    
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th <span class="bs_class">scope=</span><span class="bs_name">"row"</span>&gt;1&lt;/th&gt;
+            &lt;td&gt;Mark&lt;/td&gt;
+            &lt;td&gt;Otto&lt;/td&gt;
+            &lt;td&gt;@mdo&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th <span class="bs_class">scope=</span><span class="bs_name">"row"</span>&gt;2&lt;/th&gt;
+            &lt;td&gt;Jacob&lt;/td&gt;
+            &lt;td&gt;Thornton&lt;/td&gt;
+            &lt;td&gt;@fat&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th <span class="bs_class">scope=</span><span class="bs_name">"row"</span>&gt;3&lt;/th&gt;
+            &lt;td&gt;Larry&lt;/td&gt;
+            &lt;td&gt;the Bird&lt;/td&gt;
+            &lt;td&gt;@twitter&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+&lt;table&gt;
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MODAL -->
+    <section class="modals">
+      <div class="container">
+        <h4 class="pt-4 pb-3">Modals</h4>
+        <h5>Live demo</h5>
+        <div class="bs_cover">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Launch demo modal
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Modal title
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam.
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bs_code">
+          <div class="bs_content">
+            <pre>
+<span class="bs_cmt">&lt;!-- Button trigger modal --&gt;</span>
+&lt;button <span class="bs_class">type=</span><span class="bs_name">"button"</span> <span class="bs_class">class=</span><span class="bs_name">"btn btn-primary"</span> <span class="bs_class">data-toggle=</span><span class="bs_name">"modal"</span> <span class="bs_class">data-target=</span><span class="bs_name">"#exampleModal"</span>&gt;
+    Launch demo modal
+&lt;/button&gt;
+
+<span class="bs_cmt">&lt;!-- Modal --&gt;</span>
+&lt;div <span class="bs_class">class=</span><span class="bs_name">"modal fade"</span> <span class="bs_class">id=</span><span class="bs_name">"exampleModal"</span> <span class="bs_class">tabindex=</span><span class="bs_name">"-1"</span> <span class="bs_class">role=</span><span class="bs_name">"dialog"</span> <span class="bs_class">aria-labelledby=</span><span class="bs_name">"exampleModalLabel"</span> <span class="bs_class">aria-hidden=</span><span class="bs_name">"true</span>&gt;
+    &lt;div <span class="bs_class">class=</span><span class="bs_name">"modal-dialog"</span> <span class="bs_class">role=</span><span class="bs_name">"document"</span>&gt;
+        &lt;div <span class="bs_class">class=</span><span class="bs_name">"modal-content"</span>&gt;
+            &lt;div <span class="bs_class">class=</span><span class="bs_name">"modal-header"</span>&gt;
+            &lt;h5 <span class="bs_class">class=</span><span class="bs_name">"modal-title"</span> <span class="bs_class">id=</span><span class="bs_name">"exampleModalLabel"</span>&gt;Modal title&lt;/h5&gt;
+            &lt;button <span class="bs_class">type=</span><span class="bs_name">"button"</span> <span class="bs_class">class=</span><span class="bs_name">"close"</span> <span class="bs_class">data-dismiss=</span><span class="bs_name">"modal"</span> <span class="bs_class">aria-label=</span><span class="bs_name">"Close""</span>&gt;
+                &lt;span <span class="bs_class">aria-hidden=</span><span class="bs_name">"true"</span>&gt;&amp;time;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div <span class="bs_class">class=</span><span class="bs_name">"modal-body"</span>&gt;
+                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                     doloremque laudantium, totam rem aperiam.
+                &lt;/p&gt;      
+            &lt;/div&gt;
+            &lt;div <span class="bs_class">class=</span><span class="bs_name">"modal-footer"</span>&gt;
+            &lt;button <span class="bs_class">type=</span><span class="bs_name">"button"</span> <span class="bs_class">class=</span><span class="bs_name">"btn btn-secondary"</span> <span class="bs_class">data-dismiss=</span><span class="bs_name">"modal"</span>&gt;Close&lt;/button&gt;
+            &lt;button <span class="bs_class">type=</span><span class="bs_name">"button"</span> <span class="bs_class">class=</span><span class="bs_name">"btn btn-primary"</span>&gt;Save changes&lt;/button&gt;  
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+          </div>
+        </div>
+        <h5>Vertically centered</h5>
+        <div class="bs_cover">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Launch demo modal
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Modal title
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam.
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bs_code">
+          <div class="bs_content">
+            <pre>
+<span class="bs_cmt">&lt;!-- Button trigger modal --&gt;</span>
+&lt;button <span class="bs_class">type=</span><span class="bs_name">"button"</span> <span class="bs_class">class=</span><span class="bs_name">"btn btn-primary"</span> <span class="bs_class">data-toggle=</span><span class="bs_name">"modal"</span> <span class="bs_class">data-target=</span><span class="bs_name">"#exampleModal"</span>&gt;
+    Launch demo modal
+&lt;/button&gt;
+
+<span class="bs_cmt">&lt;!-- Modal --&gt;</span>
+&lt;div <span class="bs_class">class=</span><span class="bs_name">"modal fade"</span> <span class="bs_class">id=</span><span class="bs_name">"exampleModal"</span> <span class="bs_class">tabindex=</span><span class="bs_name">"-1"</span> <span class="bs_class">role=</span><span class="bs_name">"dialog"</span> <span class="bs_class">aria-labelledby=</span><span class="bs_name">"exampleModalLabel"</span> <span class="bs_class">aria-hidden=</span><span class="bs_name">"true</span>&gt;
+    &lt;div <span class="bs_class">class=</span><span class="bs_name">"modal-dialog modal-dialog-centered"</span> <span class="bs_class">role=</span><span class="bs_name">"document"</span>&gt;
+        &lt;div <span class="bs_class">class=</span><span class="bs_name">"modal-content"</span>&gt;
+            &lt;div <span class="bs_class">class=</span><span class="bs_name">"modal-header"</span>&gt;
+            &lt;h5 <span class="bs_class">class=</span><span class="bs_name">"modal-title"</span> <span class="bs_class">id=</span><span class="bs_name">"exampleModalLabel"</span>&gt;Modal title&lt;/h5&gt;
+            &lt;button <span class="bs_class">type=</span><span class="bs_name">"button"</span> <span class="bs_class">class=</span><span class="bs_name">"close"</span> <span class="bs_class">data-dismiss=</span><span class="bs_name">"modal"</span> <span class="bs_class">aria-label=</span><span class="bs_name">"Close""</span>&gt;
+                &lt;span <span class="bs_class">aria-hidden=</span><span class="bs_name">"true"</span>&gt;&amp;time;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div <span class="bs_class">class=</span><span class="bs_name">"modal-body"</span>&gt;
+                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                     doloremque laudantium, totam rem aperiam.
+                &lt;/p&gt;      
+            &lt;/div&gt;
+            &lt;div <span class="bs_class">class=</span><span class="bs_name">"modal-footer"</span>&gt;
+            &lt;button <span class="bs_class">type=</span><span class="bs_name">"button"</span> <span class="bs_class">class=</span><span class="bs_name">"btn btn-secondary"</span> <span class="bs_class">data-dismiss=</span><span class="bs_name">"modal"</span>&gt;Close&lt;/button&gt;
+            &lt;button <span class="bs_class">type=</span><span class="bs_name">"button"</span> <span class="bs_class">class=</span><span class="bs_name">"btn btn-primary"</span>&gt;Save changes&lt;/button&gt;  
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FORMS -->
+    <section class="forms">
+      <div class="container">
+        <h4 class="pt-4 pb-3">Forms</h4>
+        <div class="bs_cover">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="bs_code">
+          <div class="bs_content">
+            <pre>
+&lt;form&gt;
+    &lt;div <span class="bs_class">class=</span><span class="bs_name">"form-group"</span>&gt;
+        &lt;label <span class="bs_class">for=</span><span class="bs_name">"exampleInputEmail1"</span>&gt;Email address&lt;/label&gt;
+        &lt;input <span class="bs_class">type=</span><span class="bs_name">"email"</span> <span class="bs_class">class=</span><span class="bs_name">"form-control"</span> <span class="bs_class">id=</span><span class="bs_name">"exampleInputEmail1"</span> <span class="bs_class">aria-describedby=</span><span class="bs_name">"emailHelp"</span> <span class="bs_class">placeholder=</span><span class="bs_name">"Enter email"</span>&gt;
+        &lt;small <span class="bs_class">id=</span><span class="bs_name">"emailHelp"</span> <span class="bs_class">class=</span><span class="bs_name">"form-text text-muted"</span>&gt;We'll never share your email with anyone else.&lt;/small&gt;
+    &lt;/div&gt;
+    &lt;div <span class="bs_class">class=</span><span class="bs_name">"form-group"</span>&gt;
+        &lt;label <span class="bs_class">for=</span><span class="bs_name">"exampleInputPassword1"</span>&gt;Password&lt;/label&gt;
+        &lt;input <span class="bs_class">type=</span><span class="bs_name">"password"</span> <span class="bs_class">class=</span><span class="bs_name">"form-control"</span> <span class="bs_class">id=</span><span class="bs_name">"exampleInputPassword1"</span> <span class="bs_class">placeholder=</span><span class="bs_name">"Password"</span>&gt;
+    &lt;/div&gt;
+    &lt;div <span class="bs_class">class=</span><span class="bs_name">"form-check"</span>&gt;
+        &lt;input <span class="bs_class">type=</span><span class="bs_name">"checkbox"</span> <span class="bs_class">class=</span><span class="bs_name">"form-check-input"</span> <span class="bs_class">id=</span><span class="bs_name">"exampleCheck1"</span>&gt;
+        &lt;label <span class="bs_class">class=</span><span class="bs_name">"form-check-label"</span> <span class="bs_class">for=</span><span class="bs_name">"exampleCheck1"</span>&gt;Check me out&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button <span class="bs_class">type=</span><span class="bs_name">"submit"</span> <span class="bs_class">class=</span><span class="bs_name">"btn btn-primary"</span>&gt;Submit&lt;/label&gt;
+&lt;/form&gt;    
+            </pre>
+          </div>
+        </div>
+        <h5 class="my-5">Readonly plain text</h5>
+        <div class="bs_cover">
+          <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label"
+              >Email</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="text"
+                readonly
+                class="form-control-plaintext"
+                id="staticEmail"
+                value="email@example.com"
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label"
+              >Password</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword"
+                placeholder="Password"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="bs_code">
+          <div class="bs_content">
+            <pre>
+&lt;form&gt;
+    &lt;div <span class="bs_class">class=</span><span class="bs_name">"form-group row"</span>&gt;
+        &lt;label <span class="bs_class">for=</span><span class="bs_name">"staticEmail"</span> <span class="bs_class">class=</span><span class="bs_name">"col-sm-2 col-form-label"</span>&gt;Email&lt;/label&gt;
+        &lt;div <span class="bs_class">class=</span><span class="bs_name">"col-sm-10"</span>&gt;
+        &lt;input <span class="bs_class">type=</span><span class="bs_name">"text"</span> <span class="bs_class">readonly class=</span><span class="bs_name">"form-control-plaintext"</span> <span class="bs_class">id=</span><span class="bs_name">"staticEmail"</span> <span class="bs_class">value=</span><span class="bs_name">"email@example.com"</span>&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div <span class="bs_class">class=</span><span class="bs_name">"form-group row"</span>&gt;
+        &lt;label <span class="bs_class">for=</span><span class="bs_name">"inputPassword"</span> <span class="bs_class">class=</span><span class="bs_name">"col-sm-2 col-form-label"</span>&gt;Password&lt;/label&gt;
+        &lt;div <span class="bs_class">class=</span><span class="bs_name">"col-sm-10"</span>&gt;
+        &lt;input <span class="bs_class">type=</span><span class="bs_name">"password"</span> <span class="bs_class">class=</span><span class="bs_name">"form-control"</span> <span class="bs_class">id=</span><span class="bs_name">"inputPassword"</span> <span class="bs_class">placeholder=</span><span class="bs_name">"Password"</span>&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
             </pre>
           </div>
         </div>
