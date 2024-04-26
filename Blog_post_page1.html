@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Contact</title>
+    <title>Blog Posts</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -47,6 +47,8 @@
       href="https://unpkg.com/css.gg@2.0.0/icons/css/sun.css"
       rel="stylesheet"
     />
+    <!-- BLOG POST CSS -->
+    <link rel="stylesheet" href="./css/Blog_post.css" />
     <!-- 404 CSS -->
     <link rel="stylesheet" href="./css/404.css" />
     <!-- CONTACT CSS -->
@@ -111,80 +113,164 @@
     </header>
     <section class="header_bg">
       <div class="container">
-        <h4 class="fw-bold mb-2">Contact us</h4>
-        <a href="./index.html">Home</a><span> » Contact Page</span>
+        <h4 class="fw-bold mb-2">Blog Posts</h4>
+        <a href="./index.html">Home</a>
       </div>
     </section>
-    <!-- CONTACT -->
-    <section class="contact py-5">
+    <!-- BLOG POST PAGE 1 -->
+    <div class="blog_post py-5">
       <div class="container">
-        <div class="contact_content row mx-5">
-          <div class="col-12 col-lg-5 mt-5">
-            <h5>Get in touch</h5>
-            <h3>Contact Us</h3>
-            <div class="contact_us mt-4">
-              <div class="contact_item d-flex align-items-baseline">
-                <i class="fa-solid fa-earth-americas"></i>
-                <ul>
-                  <li>Company Address</li>
-                  <li>10001, 5th Avenue, 12202 street, USA.</li>
-                </ul>
+        <div class="row">
+          <div class="col-lg-8 col-xl-9">
+            <div class="post_item mb-5">
+              <div class="post_card">
+                <div class="post_card_header">
+                  <img src="./images/img-blog-post/img1.jpg" alt="" />
+                </div>
+                <div class="post_card_body mt-4">
+                  <p>
+                    March 24, 2021
+                    <a
+                      class="w3c"
+                      href="https://wp.w3layouts.com/farmstead/author/w3layouts/"
+                      >- by W3Layouts</a
+                    >
+                  </p>
+                  <div class="hello_world"><a href="#">Hello World!</a></div>
+                  <br />
+                  <button class="button">READ MORE</button>
+                </div>
               </div>
             </div>
-            <div class="contact_us">
-              <div class="contact_item d-flex align-items-baseline">
-                <i class="fa-solid fa-phone"></i>
-                <ul>
-                  <li>Call Us</li>
-                  <li><a href="tel:+1212344567">+1(21) 234 4567</a></li>
-                </ul>
+            <div class="post_item mb-5">
+              <div class="post_card">
+                <div class="post_card_header">
+                  <img src="./images/img-blog-post/img2.jpg" alt="" />
+                </div>
+                <div class="post_card_body mt-4">
+                  <p>
+                    March 24, 2021
+                    <a
+                      class="w3c"
+                      href="https://wp.w3layouts.com/farmstead/author/w3layouts/"
+                      >- by W3Layouts</a
+                    >
+                  </p>
+                  <div class="hello_world">
+                    <a href="#">Sed ut perspiciatis unde omnis iste natus</a>
+                  </div>
+                  <br />
+                  <button class="button">READ MORE</button>
+                </div>
               </div>
             </div>
-            <div class="contact_us">
-              <div class="contact_item d-flex align-items-baseline">
-                <i class="fa-regular fa-envelope-open"></i>
-                <ul>
-                  <li>Email Us</li>
-                  <li>
-                    <a href="mailto:example@mail.com">example@mail.com</a>
-                  </li>
-                </ul>
+            <div class="post_item mb-5">
+              <div class="post_card">
+                <div class="post_card_header">
+                  <img src="./images/img-blog-post/img3.jpg" alt="" />
+                </div>
+                <div class="post_card_body mt-4">
+                  <p>
+                    March 24, 2021
+                    <a
+                      class="w3c"
+                      href="https://wp.w3layouts.com/farmstead/author/w3layouts/"
+                      >- by W3Layouts</a
+                    >
+                  </p>
+                  <div class="hello_world">
+                    <a href="#">Nemo enim ipsam quia sit aspernatur aut odit</a>
+                  </div>
+                  <br />
+                  <button class="button">READ MORE</button>
+                </div>
               </div>
             </div>
-            <div class="contact_us">
-              <div class="contact_item d-flex align-items-baseline">
-                <i class="fa-solid fa-headphones-simple"></i>
-                <ul>
-                  <li>Customer Support</li>
-                  <li><a href="info@support.com">info@support.com</a></li>
-                </ul>
+            <div class="post_item mb-5">
+              <div class="post_card">
+                <div class="post_card_header">
+                  <img src="./images/img-blog-post/img4.jpg" alt="" />
+                </div>
+                <div class="post_card_body mt-4">
+                  <p>
+                    March 24, 2021
+                    <a
+                      class="w3c"
+                      href="https://wp.w3layouts.com/farmstead/author/w3layouts/"
+                      >- by W3Layouts</a
+                    >
+                  </p>
+                  <div class="hello_world">
+                    <a href="#">Ut enim ad minima, quis nostrum eationem</a>
+                  </div>
+                  <br />
+                  <button class="button">READ MORE</button>
+                </div>
               </div>
             </div>
+            <ul class="page_number">
+              <li><span>1</span></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
           </div>
-          <div class="col-12 col-lg-7 mt-5">
-            <form class="contact_form d-flex flex-column gap-1">
-              <input type="text" placeholder="Your Name*" />
-              <input type="email" placeholder="Your Email*" />
-              <input type="text" placeholder="Subject*" />
-              <input type="text" placeholder="Website Url*" />
-              <textarea placeholder="Type your message here*"></textarea>
-            </form>
-            <button class="button mt-3">SEND MESSAGE</button>
+          <div class="col-lg-4 col-xl-3 mt-lg-0 mt-5">
+            <div class="post_right_side_bar">
+              <div class="post_form">
+                <form>
+                  <input type="search" placeholder="Search ..." />
+                  <button>Search</button>
+                </form>
+              </div>
+              <div class="post_link mt-5">
+                <h2>Recent Posts</h2>
+                <a href="#">Hello World!</a>
+                <hr />
+                <a href="#">Sed Ut Perspiciatis Unde Omnis Iste Natus</a>
+                <hr />
+                <a href="#">Nemo Enim Ipsam Quia Sit Aspernatur Aut Odit</a>
+                <hr />
+                <a href="#">Ut Enim Ad Minima, Quis Nostrum Eationem</a>
+                <hr />
+                <a href="#">At Eos Et Accusamus Et Iusto Odio Ssimos Duci </a>
+              </div>
+              <div class="post_comment mt-5">
+                <h2>Recent Comments</h2>
+                <p>
+                  <a href="#">A WordPress Commenter</a> on
+                  <a href="#">Hello world!</a>
+                </p>
+                <p>
+                  <a href="#">W3Layouts</a> on
+                  <a href="#">At eos et accusamus et iusto odio ssimos duci</a>
+                </p>
+                <p>
+                  <a href="#">A WordPress Commenter</a> on
+                  <a href="#">Hello world!</a>
+                </p>
+              </div>
+              <div class="post_link mt-5">
+                <h2>Archives</h2>
+                <a href="#">March 2021</a>
+                <hr />
+                <h2>Categories</h2>
+                <a href="#">Agriculture</a>
+                <a href="#">Farming</a>
+                <hr />
+                <h2>Meta</h2>
+                <a href="#">Log In</a>
+                <hr />
+                <a href="#">Entries Feed</a>
+                <hr />
+                <a href="#">Comments Feed</a>
+                <hr />
+                <a href="#">Wordpress.Org</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="contact_map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.182370726!2d-0.10159865000000001!3d51.52864165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2s!4v1713410588916!5m2!1sen!2s"
-          width="100%"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </section>
+    </div>
     <!-- FOOTER -->
     <footer>
       <div class="container">
