@@ -515,7 +515,7 @@ footer form button:hover {
 
 /* About */
 .about {
-  background-image: url(./../img_services/banner_about.png);
+  background-image: url(../img/banner_about.png);
   background-repeat: no-repeat;
   background-position: bottom;
 }
