@@ -69,3 +69,13 @@
 .b1_right {
   display: inline-block;
 }
+.title_right {
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--heading-color);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.b1_right h2 {
+  font-family: "Volkhov", serif;
+}
