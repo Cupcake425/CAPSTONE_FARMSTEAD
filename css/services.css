@@ -1,0 +1,150 @@
+body {
+  font-family: "Volkhov", serif;
+}
+/* HEADER BACKGROUND */
+.header_bg {
+  background-image: url(../images/bg-contact.png);
+  background-position: bottom;
+  background-size: cover;
+  height: 30vh;
+  padding-top: 150px;
+}
+.header_bg h4 {
+  color: var(--heading-color);
+}
+.header_bg a {
+  color: var(--text-color);
+  font-weight: 700;
+  transition: all 0.5s;
+}
+.header_bg span {
+  color: var(--text-color);
+}
+.header_bg a:hover {
+  color: #fb811e;
+}
+/* Number */
+.number .number-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.number .number-item i {
+  width: 80px;
+  height: 80px;
+  border-radius: 100rem;
+  background: rgb(0 159 77 / 4%);
+  color: var(--secondary-color);
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number .number-item span {
+  font-size: 48px;
+  line-height: 1.5;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+/* SERVICE */
+.service {
+  margin-top: 150px;
+}
+.service_card {
+  padding: 50px 35px;
+  position: relative;
+  border-radius: 15px;
+  background-color: var(--bg-color);
+  box-shadow: 0 1rem 3rem var(--shadow-color);
+  transition: all 0.5s;
+}
+.service_card:hover {
+  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+}
+.service_card i {
+  font-size: 45px;
+  color: #fb811e;
+}
+.service_card a {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: var(--heading-color);
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 22px;
+  letter-spacing: 0;
+  transition: all 0.5s;
+}
+.service_card a:hover {
+  color: #fb811e;
+}
+/* QUALITY */
+.quality img {
+  border-radius: 20px;
+}
+.quality_content h2 {
+  color: #fb811e;
+  font-size: 22px;
+}
+.quality_content h1 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+.quality_content i {
+  display: inline-block;
+  font-size: 30px;
+  color: #fb811e;
+}
+.quality_content ul {
+  padding-left: 1rem;
+}
+.quality_content li:first-of-type {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: black;
+}
+/* Agriculture */
+.Agriculture {
+  background-image: url(../images/img-service/ser2.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  position: relative;
+}
+.agri_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  background: rgb(8 8 8 / 44%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 400px;
+  color: white;
+}
+/* BUTTON */
+.button {
+  padding: 12px 30px;
+  font-weight: 500;
+  border-radius: 35px;
+  background-color: #fb811e;
+  outline: none;
+  color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.button:hover {
+  background-color: #009f4d;
+}
